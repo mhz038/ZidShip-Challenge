@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'couriers'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+COURIER_CONFIGS = {
+    'aramex': {
+        'api_key': 'your-api-key',
+        'account_number': 'your-account-number',
+        'account_pin': 'your-account-pin',
+        'base_url': 'https://api.aramex.com/v1',
+    },
+}
